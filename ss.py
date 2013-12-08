@@ -160,7 +160,7 @@ put(s, "")
 put(s, dump)
 put(s, "")
 
-print socket.read(30)
+print s.recv(1024)
 
 try:
 	s.shutdown(socket.SHUT_RDWR)
